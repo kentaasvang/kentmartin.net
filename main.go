@@ -21,5 +21,8 @@ func indexHandler(w http.ResponseWriter, r *http.Request)  {
 
 func main() {
     http.HandleFunc("/", indexHandler)
+    http.Handle("/vendor/", http.StripPrefix("/vendor/", http.FileServer(http.Dir("vendor"))))
+
+
     log.Fatal(http.ListenAndServe(":9990", nil))
 }
