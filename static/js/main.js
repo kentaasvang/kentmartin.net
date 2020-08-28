@@ -1,2 +1,2 @@
 
-document.getElementsByTagName("body")[0].style.backgroundColor = "#000";
+// Put your javascript here
