@@ -1,13 +1,11 @@
 package main
 
 import (
-	"os"
 	"html/template"
 	"io/ioutil"
 	"log"
 	"net/http"
 	"path"
-	_ "github.com/joho/godotenv/autoload"
 )
 
 
@@ -16,7 +14,8 @@ type Page struct {
 }
 
 // load project root 
-var Root string = os.Getenv("PROJECT_PATH")
+// var Root string = os.Getenv("PROJECT_PATH")
+var Root string = "/home/kent/go/src/github.com/kentaasvang/kentmartin.net"
 
 
 func indexHandler(w http.ResponseWriter, r *http.Request) {
@@ -34,6 +33,7 @@ func indexHandler(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 
+	ioutil.WriteFile("temp.log", []byte("main: "+Root), 0644)
 	// Routes
 	http.HandleFunc("/", indexHandler)
 
