@@ -1,3 +1,5 @@
 # My personal website
 
-visit: https://www.kentmartin.net
+This project will probably never be finished.
+
+Hosted at: https://www.kentmartin.net
