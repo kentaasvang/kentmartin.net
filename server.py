@@ -1,4 +1,4 @@
-from flask import Flask, render_template_string
+from flask import Flask, render_template_string, render_template
 
 
 def create_app():
@@ -7,7 +7,7 @@ def create_app():
 
     @app.route("/")
     def index():
-        return render_template_string("<h1> hello, world </h1>")
+        return render_template("index.html")
 
     @app.route("/article")
     def article():
