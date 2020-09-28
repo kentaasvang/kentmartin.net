@@ -1,8 +1,2 @@
-# log-files
-**.log
-
-# binaries
-main
-
-# environment variables
-.env
+# python-files
+__pycache__/
