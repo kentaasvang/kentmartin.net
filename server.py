@@ -9,4 +9,12 @@ def create_app():
     def index():
         return render_template_string("<h1> hello, world </h1>")
 
+    @app.route("/article")
+    def article():
+        return render_template_string("<h1> hello, article </h1>")
+
+    @app.route("/article/<article_id>")
+    def show_article(article_id):
+        return render_template_string("<h1> hello, article nr: %s </h1>" % article_id)
+
     return app
