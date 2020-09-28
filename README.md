@@ -1,3 +1,3 @@
 # My personal website
 
-visit: https://www.kentmartin.net
+hosted at: https://www.kentmartin.net
