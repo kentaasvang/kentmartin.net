@@ -1,0 +1,1 @@
+# script to build static site
