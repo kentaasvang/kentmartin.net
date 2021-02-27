@@ -6,3 +6,7 @@ main
 
 # environment variables
 .env
+
+# vim
+*.swp
+*.swo
