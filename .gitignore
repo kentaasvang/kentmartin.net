@@ -10,3 +10,5 @@ main
 # vim
 *.swp
 *.swo
+.vscode/settings.json
+__pycache__/builder.cpython-39.pyc
